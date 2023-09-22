@@ -52,4 +52,20 @@ docker run -it busybox
 
 # remove container after exit
 docker run --rm -it busybox
+
+# docker compose
+# builds all of the docker images
+docker-compose build
+
+# starts all of the services defined
+docker-compose up
+
+# stops and removes all of the containers defined
+docker-compose down
+
+# lists all of the containers that are running
+docker-compose ps
+
+# outputs the logs from all of the containers
+docker-compose logs
 ```
