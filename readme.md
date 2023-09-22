@@ -44,7 +44,10 @@ docker run busybox echo "hi!"
 # list of images
 docker images
 
-# Go to containers interective shell
+# remove an image
+docker rmi imageID
+
+# go to containers interective shell
 docker run -it busybox
 
 # remove container after exit
