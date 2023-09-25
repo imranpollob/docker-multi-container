@@ -63,6 +63,9 @@ docker-compose build
 # starts all of the services defined
 docker-compose up
 
+# build and run
+docker-compose up --build
+
 # stops and removes all of the containers defined
 docker-compose down
 

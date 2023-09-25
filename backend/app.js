@@ -6,6 +6,7 @@ const app = express();
 
 app.use(cors());
 
+
 const mysqlConfig = {
   host: "mysql_server",
   user: "root",
@@ -59,6 +60,7 @@ app.get("/seed", (req, res) => {
       if (err) throw err;
       console.log("Inserted 5 todos");
     });
+    
     sql = `SELECT * FROM todos;`;
     con.query(sql, (err, result) => {
       if (err) throw err;
