@@ -53,6 +53,9 @@ docker run -it busybox
 # remove container after exit
 docker run --rm -it busybox
 
+# open interective shell of a running container
+docker exec -it containerID bash
+
 # docker compose
 # builds all of the docker images
 docker-compose build

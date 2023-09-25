@@ -5,8 +5,20 @@ services:
     build: ./backend
     ports:
       - "8080:8080"
+    # command: node seed.js
+    depends_on:
+      - mysql_server
+    restart: always
 
   frontend:
     build: ./frontend
     ports:
       - "3000:3000"
+    restart: always
+
+
+  mysql_server:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+    restart: always
