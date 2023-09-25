@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.8'
 
 services:
   backend:
@@ -6,6 +6,9 @@ services:
     ports:
       - "8080:8080"
     # command: node seed.js
+    volumes:
+      - ./backend:/backend
+      - /backend/node_modules
     depends_on:
       - mysql_server
     restart: always

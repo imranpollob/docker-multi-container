@@ -86,6 +86,7 @@ app.get("/todos", (req, res) => {
       res.send(result);
     });
   });
+
   // // Create an array of fake todos
   // const fakeTodos = [
   //   { id: 1, title: "Buy groceries", completed: false },

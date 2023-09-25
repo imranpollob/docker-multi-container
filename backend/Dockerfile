@@ -10,4 +10,6 @@ COPY . .
 
 # RUN npm run seed
 
-CMD ["npm", "start"]
+VOLUME [ "/backend/node_modules" ]
+
+CMD [ "npm", "run", "dev" ]
